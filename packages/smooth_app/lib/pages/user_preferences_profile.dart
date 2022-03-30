@@ -161,6 +161,7 @@ class _UserPreferencesPageState extends State<UserPreferencesSection> {
       result.add(
         Center(
           child: ElevatedButton(
+            key: const ValueKey<String>('Goto: LoginPage'),
             onPressed: () async {
               Navigator.push<dynamic>(
                 context,

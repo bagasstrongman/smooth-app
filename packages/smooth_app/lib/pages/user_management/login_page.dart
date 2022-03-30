@@ -126,6 +126,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   //Login
                   SmoothTextFormField(
+                    key: const ValueKey<String>('UserID-TextField'),
                     type: TextFieldTypes.PLAIN_TEXT,
                     controller: userIdController,
                     hintText: appLocalizations.username_or_email,
@@ -151,6 +152,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   //Password
                   SmoothTextFormField(
+                    key: const ValueKey<String>('Password-TextField'),
                     type: TextFieldTypes.PASSWORD,
                     controller: passwordController,
                     hintText: appLocalizations.password,
@@ -174,6 +176,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   //Sign in button
                   ElevatedButton(
+                    key: const ValueKey<String>('Login-Button'),
                     onPressed: () => _login(context),
                     child: Text(
                       appLocalizations.sign_in,
