@@ -13,7 +13,8 @@ void main() {
         // Configured by test
         'init': 'true',
         'themeColorTag': 'blue',
-        'themeDark': 'false',
+        //TODO(M123): To be switched after https://github.com/openfoodfacts/smooth-app/issues/1400
+        //'themeDark': 'false',
 
         // Very important by default
         'IMPORTANCE_AS_STRINGnutriscore': 'very_important',
